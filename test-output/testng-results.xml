@@ -1,29 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6455" started-at="2018-04-29T15:03:29Z" finished-at="2018-04-29T15:03:35Z">
+  <suite name="Regression Suite" duration-ms="9058" started-at="2018-04-29T15:33:06Z" finished-at="2018-04-29T15:33:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6455" started-at="2018-04-29T15:03:29Z" finished-at="2018-04-29T15:03:35Z">
+    <test name="RestAssured Test" duration-ms="9058" started-at="2018-04-29T15:33:06Z" finished-at="2018-04-29T15:33:15Z">
       <class name="com.letskodeit.statuses.TwitterWorkflowTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.letskodeit.statuses.TwitterWorkflowTest@475530b9]" name="setup" is-config="true" duration-ms="563" started-at="2018-04-29T15:03:29Z" finished-at="2018-04-29T15:03:29Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.letskodeit.statuses.TwitterWorkflowTest@26be92ad]" name="setup" is-config="true" duration-ms="1" started-at="2018-04-29T15:33:10Z" finished-at="2018-04-29T15:33:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="postTweet()[pri:0, instance:com.letskodeit.statuses.TwitterWorkflowTest@475530b9]" name="postTweet" duration-ms="2979" started-at="2018-04-29T15:03:29Z" finished-at="2018-04-29T15:03:32Z">
+        <test-method status="PASS" signature="postTweet()[pri:0, instance:com.letskodeit.statuses.TwitterWorkflowTest@26be92ad]" name="postTweet" duration-ms="1456" started-at="2018-04-29T15:33:10Z" finished-at="2018-04-29T15:33:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postTweet -->
-        <test-method status="PASS" signature="readTweet()[pri:0, instance:com.letskodeit.statuses.TwitterWorkflowTest@475530b9]" name="readTweet" duration-ms="1454" started-at="2018-04-29T15:03:32Z" depends-on-methods="com.letskodeit.statuses.TwitterWorkflowTest.postTweet" finished-at="2018-04-29T15:03:34Z">
+        <test-method status="PASS" signature="readTweet()[pri:0, instance:com.letskodeit.statuses.TwitterWorkflowTest@26be92ad]" name="readTweet" duration-ms="1408" started-at="2018-04-29T15:33:12Z" depends-on-methods="com.letskodeit.statuses.TwitterWorkflowTest.postTweet" finished-at="2018-04-29T15:33:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- readTweet -->
-        <test-method status="PASS" signature="deleteTweet()[pri:0, instance:com.letskodeit.statuses.TwitterWorkflowTest@475530b9]" name="deleteTweet" duration-ms="1413" started-at="2018-04-29T15:03:34Z" depends-on-methods="com.letskodeit.statuses.TwitterWorkflowTest.readTweet" finished-at="2018-04-29T15:03:35Z">
+        <test-method status="PASS" signature="deleteTweet()[pri:0, instance:com.letskodeit.statuses.TwitterWorkflowTest@26be92ad]" name="deleteTweet" duration-ms="1213" started-at="2018-04-29T15:33:13Z" depends-on-methods="com.letskodeit.statuses.TwitterWorkflowTest.readTweet" finished-at="2018-04-29T15:33:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteTweet -->
       </class> <!-- com.letskodeit.statuses.TwitterWorkflowTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.letskodeit.statuses.UserTimelineTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.letskodeit.statuses.UserTimelineTest@1d057a39]" name="setup" is-config="true" duration-ms="586" started-at="2018-04-29T15:33:06Z" finished-at="2018-04-29T15:33:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="readTweets1()[pri:0, instance:com.letskodeit.statuses.UserTimelineTest@1d057a39]" name="readTweets1" duration-ms="2610" started-at="2018-04-29T15:33:06Z" finished-at="2018-04-29T15:33:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readTweets1 -->
+        <test-method status="PASS" signature="readTweets2()[pri:0, instance:com.letskodeit.statuses.UserTimelineTest@1d057a39]" name="readTweets2" duration-ms="1751" started-at="2018-04-29T15:33:09Z" finished-at="2018-04-29T15:33:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readTweets2 -->
+      </class> <!-- com.letskodeit.statuses.UserTimelineTest -->
+    </test> <!-- RestAssured Test -->
+  </suite> <!-- Regression Suite -->
 </testng-results>
